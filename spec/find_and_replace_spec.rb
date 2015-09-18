@@ -15,6 +15,6 @@ describe("String#find_and_replace") do
   end
 
   it('will take a multi word string and replace one word with another word') do
-    expect(("The boy she met is now her Boyfriend").find_and_replace("boy", "girl")).to(eq("The boy she met is now her Girlfriend"))
+    expect(("Oh Boy! The boyish boy she met is now her Boyfriend").find_and_replace("boy", "girl")).to(eq("Oh Girl! The girlish girl she met is now her Girlfriend"))
   end
 end

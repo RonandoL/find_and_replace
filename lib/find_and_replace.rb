@@ -3,7 +3,13 @@ class String
     string = self
 
     if string.include?(target)
-      string.gsub target, replacement
+      string.gsub!(target, replacement)
+    else
+      string
+    end
+
+    if string.include?(target.capitalize)
+      string.gsub!(target.capitalize, replacement.capitalize!)
     else
       string
     end
